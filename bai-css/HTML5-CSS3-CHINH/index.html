@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/93ec6d166b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/93ec6d166b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header w-100" >
+        <div class="grid " style="position:fixed;top:0; z-index:1; background-color:white; border-bottom: 1px solid grey;">
+            <div class="row">
+                <div class="l-4 m-12 c-12" style="padding: 20px;text-align: left;">
+                    <div class="menu-btn" style="cursor: pointer;">
+                        <i class="fas fa-bars px-2" style="font-size:1.5rem;"></i>
+                        <span style="position: absolute;top: 20px;left: 40px;"><b>MENU</b></span>
+                    </div>
+                </div>
+                <div class="l-4 m-12 c-12" style="padding: 20px; text-align: center;">
+                    <div class="menu-icon">
+                        <img src="https://www.honda.com/-/media/Honda-Homepage/Images/Logos/svg/Honda-Power-Of-Dreams-New.svg" alt="" height="35">
+                    </div>
+                </div>
+                <div class="l-4 m-12 c-12" style="padding: 20px;text-align: right;">
+                    <div class="menu-aboutus-search-icon">
+                        <span class="px-3"><b>About us</b></span>
+                        <i class="fas fa-search px-3" style="font-size:1.5rem"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height:75px"></div>
+        <div style="display: flex;  position: relative;">
+            <div class='px-5 py-4 cut-line' style="color:white; background-color:orange; width:400px;position: relative;font-weight: 900;">
+                <i class="fas fa-exclamation-circle" style="font-size:1.5rem"></i>
+                <span style="position: absolute;top: 25px;left: 90px;">Our Consumers' Rights </span>
+            </div>
+            <div style="position:relative; ">
+                <p style="padding: 2rem 0 0 2rem;"> Fight for Equal EV Tax Incentives <a class="px-4 text-warning link" href="#">MORE <span><b>></b></span></a></p>
+            </div>
+            <div style="position:absolute;top:30px;right: 90px;">
+                <span class="button-1 d-inline">
+                    <i class="text-muted fas fa-circle" style="cursor: pointer;"></i>
+                </span>
+                <span class="button-2 d-inline">
+                    <i class="text-muted fas fa-circle" style="cursor: pointer;"></i>
+                </span>
+            </div>
+        </div> 
+    </section>  
+    <section class="menu-section w-100 d-none" style="position:fixed;top:0; z-index:1;">
+        <div class="grid " style="position: relative; background-color:white; border-bottom: 1px solid grey;">
+            <div class="row">
+                <div class="l-4 m-12 c-12" style="padding: 20px;text-align: left;">
+                    <div class="menu-btn-cancle" style="cursor: pointer;">
+                        <i class="fas fa-times px-2" style="font-size:1.5rem;"></i>
+                        <span style="position: absolute;top: 20px;left: 40px;"><b>MENU</b></span>
+                    </div>
+                </div>
+                <div class="l-4 m-12 c-12" style="padding: 20px; text-align: center;">
+                    <div class="menu-icon">
+                        <img src="https://www.honda.com/-/media/Honda-Homepage/Images/Logos/svg/Honda-Power-Of-Dreams-New.svg" alt="" height="35">
+                    </div>
+                </div>
+                <div class="l-4 m-12 c-12" style="padding: 20px;text-align: right;">
+                    <div class="menu-aboutus-search-icon">
+                        <span class="px-3"><b>About us</b></span>
+                        <i class="fas fa-search px-3" style="font-size:1.5rem"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dropmenu border w-25" style="position: absolute;top: 75px;left: 0; background-color:white;overflow: hidden">
+               <div class="container " style="font-size:1.5rem; font-weight:bold;height:1000px;">
+                   <div class="home ">
+                        <p class="mt-2"><a><i class="fas fa-home"></i> HOME</a></p>
+                    </div>
+                    <hr/>
+                    <div class="our-brands dropdown">
+                        <p class="mt-2"><a class="our-brands-btn" type="button"><i class="fas fa-plus"></i> OUR BRANDS</a></p>
+
+                        <div class="menu-drop-1" style='display:none'>
+                            <a class="dropdown-item" href="#">Honda Autos</a>
+                            <a class="dropdown-item" href="#">Acura Autos</a>
+                            <a class="dropdown-item" href="#">Honda Powersports</a>
+                            <a class="dropdown-item" href="#">Honda Power Equipment</a>
+                            <a class="dropdown-item" href="#">Honda Engines</a>
+                            <a class="dropdown-item" href="#">Honda Marine</a>
+                            <a class="dropdown-item" href="#">HondaJet</a>
+                            <a class="dropdown-item" href="#">ASIMO</a>
+                        </div>
+                    
+                    </div>
+                    <hr/>
+                    <div class="about-us ">
+                        <p class="mt-2"><a class="about-us-btn" type="button"><i class="fas fa-plus"></i> ABOUT US</a></p>
+
+                        <div class="menu-drop-2" style='display:none'>
+                            <a class="dropdown-item" href="#">Honda Autos</a>
+                            <a class="dropdown-item" href="#">Acura Autos</a>
+                            <a class="dropdown-item" href="#">Honda Powersports</a>
+                            <a class="dropdown-item" href="#">Honda Power Equipment</a>
+                            <a class="dropdown-item" href="#">Honda Engines</a>
+                            <a class="dropdown-item" href="#">Honda Marine</a>
+                            <a class="dropdown-item" href="#">HondaJet</a>
+                            <a class="dropdown-item" href="#">ASIMO</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="racing " type="button">
+                        <p class="mt-2"><a class="racing-btn"><i class="fas fa-plus"></i> RACING</a></p>
+
+                        <div class="menu-drop-3" style='display:none'>
+                            <a class="dropdown-item" href="#">Honda Autos</a>
+                            <a class="dropdown-item" href="#">Acura Autos</a>
+                            <a class="dropdown-item" href="#">Honda Powersports</a>
+                            <a class="dropdown-item" href="#">Honda Power Equipment</a>
+                            <a class="dropdown-item" href="#">Honda Engines</a>
+                            <a class="dropdown-item" href="#">Honda Marine</a>
+                            <a class="dropdown-item" href="#">HondaJet</a>
+                            <a class="dropdown-item" href="#">ASIMO</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="recalls ">
+                        <p class="mt-2"><a class="recalls-btn" type="button"><i class="fas fa-plus"></i> RECALLS</a></p>
+
+                        <div class="menu-drop-4" style='display:none'>
+                            <a class="dropdown-item" href="#">Honda Autos</a>
+                            <a class="dropdown-item" href="#">Acura Autos</a>
+                            <a class="dropdown-item" href="#">Honda Powersports</a>
+                            <a class="dropdown-item" href="#">Honda Power Equipment</a>
+                            <a class="dropdown-item" href="#">Honda Engines</a>
+                            <a class="dropdown-item" href="#">Honda Marine</a>
+                            <a class="dropdown-item" href="#">HondaJet</a>
+                            <a class="dropdown-item" href="#">ASIMO</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="services ">
+                        <p class="mt-2"><a class="service-btn" type="button"><i class="fas fa-plus"></i> Services</a></p>
+
+                        <div class="menu-drop-5" style='display:none'>
+                            <a class="dropdown-item" href="#">Honda Autos</a>
+                            <a class="dropdown-item" href="#">Acura Autos</a>
+                            <a class="dropdown-item" href="#">Honda Powersports</a>
+                            <a class="dropdown-item" href="#">Honda Power Equipment</a>
+                            <a class="dropdown-item" href="#">Honda Engines</a>
+                            <a class="dropdown-item" href="#">Honda Marine</a>
+                            <a class="dropdown-item" href="#">HondaJet</a>
+                            <a class="dropdown-item" href="#">ASIMO</a>
+                        </div>
+                    </div>
+                    <hr/>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="display:block;position: absolute; top:150px; width:100%; z-index: -1;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item active w-100">
+                <img class="w-100" src="./img/Gogo22-011-GOGO22-EXTRAS_RED_STROBE_08399_Desktop.jpg" class="d-block w-100" alt="./img/Gogo22-011-GOGO22-EXTRAS_RED_STROBE_08399_Desktop.jpg">
+              </div>
+              <div class="carousel-item w-100">
+                <img  class="w-100" src="./img/Screenshot 2021-12-27 103312.png" class="d-block w-100" alt="./img/Screenshot 2021-12-27 103312.png">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <section class="d-block">
+        <div class="">
+            <div class="grid-img">
+                <div class="item text-center bg-primary text-light" style="position:relative">
+                    <div class="grid-item-right">
+                        <img src="./img/Logo_Honda_Autos.jpg" alt="" class="logo ">
+                        <p>Honda Autos</p>
+                        <a style="text-decoration: underline;"><b>GO</b></a>
+                    </div>
+                </div>
+                <div class="item item-trans item-2" >
+                    <img src="./img/homepage-brand-autos-desktop.jpg" alt="">
+                </div>
+                <div class="item text-center bg-danger text-light">
+                    <img src="./img/Logo_Honda_Powersports.jpg" alt="" class="logo ">
+                    <p>Motorcycles, ATVs,<br/> Scooters, SxS</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item item-4 item-trans">
+                    <img src="./img/homepage-brand-powersports-desktop.jpg" alt="">
+                </div>
+                <div class="item text-center bg-light text-dark">
+                    <img src="./img/Logo_Honda_Corporate_Red.jpg" alt="" class="logo ">
+                    <p>Generators, Mowers <br/>& Power Equipment</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item item-6 item-trans">
+                    <img src="./img/homepage-brand-acura-nsx-desktop.jpg" alt="">
+                </div>
+                 <div class="item text-center bg-dark text-light item-trans">
+                    <img src="./img/Logo_Acura_Logo.jpg" alt="" class="logo ">
+                    <p>Acura Autos</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item item-trans">
+                   <img src="./img/homepage-brand-mower-desktop-v1.jpg" alt="">
+                </div>
+                <div class="item text-center bg-danger text-light">
+                    <img src="./img/Logo_Honda_Jet.jpg" alt="" class="logo ">
+                    <p>Honda Aircraft<br> Company</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item item-11 item-trans">
+                    <img src="./img/homepage-brand-hondajet-desktop.jpg" alt="">
+                </div>
+                <div class="item item-12 item-trans">
+                    <img src="./img/homepage-brand-auto-racing-desktop.jpg" alt="">
+                </div>
+                <div class="item text-center bg-danger text-light">
+                    <img src="./img/Logo_Honda_Corporate_White.jpg" alt="" class="logo ">
+                    <p>General Purpose <br/> Engines</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item item-trans">
+                    <img src="./img/homepage-brand-engine-desktop.jpg" alt="">
+                </div>
+                <div class="item item-15 item-trans">
+                    <img src="./img/homepage-brand-marine-desktop.jpg" alt="">
+                </div>
+                <div class="item text-center bg-light text-dark">
+                    <img src="./img/Logo_Honda_Marine.png" alt="" class="logo ">
+                    <p>Outboard Motors</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+                <div class="item text-center bg-danger text-light">
+                    <img src="./img/Logo_Honda_Racing.jpg   " alt="" class="logo ">
+                    <p>Auto Racing</p>
+                    <a style="text-decoration: underline;"><b>GO</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-company" style="position: absolute; top: 2000px; width:100%;">
+        <h1 class="text-center">OUR COMPANY</h1>    
+        <div class="row">
+            <div class="col-6 p-0 p1_video">
+                <img src="./img/homepage-p2-pillar-mobility-desktop-2019.jpg" alt="" class="w-100">
+                <video loop  muted autoplay src="https://www.honda.com/-/media/Honda-Homepage/Videos/Homepage/MP4/Mobility_2019.mp4"></video>
+                <div class="p1_content">
+                    <h3>MOBILITY</h3>
+                    <p>We're creating tomorrow's world to elevate the joy and freedom of mobility for all.</p>
+                    <span class="btn btn--cta">	<span class="btn__text text-light"><b>MORE ></b></span>	<span class="hondaIcon-right"></span></span>
+                </div>
+            </div>
+            <div class="col-6 p-0 p2_video">
+                <img src="./img/homepage-p2-pillar-environment-desktop.jpg" alt="" class="w-100">
+                <video class="p-0 m-0 " loop  muted autoplay src="https://www.honda.com/-/media/Honda-Homepage/Videos/Homepage/MP4/Environment.mp4"></video>
+                <div class="p2_content">
+                    <h3>ENVIRONMENT</h3>
+                    <p>We’re reducing our environmental footprint at every step to help preserve the planet for future generations.</p>
+                    <span class="btn btn--cta">	<span class="btn__text text-light"><b>MORE ></b></span>	<span class="hondaIcon-right"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-0 p1_video">
+                <img src="./img/homepage-p2-pillar-community-desktop.jpg" alt="" class="w-100">
+                <video loop  muted autoplay src="https://www.honda.com/-/media/Honda-Homepage/Videos/Homepage/MP4/Community.mp4"></video>
+                <div class="p1_content">
+                    <h3>COMMUNITY</h3>
+                    <p>We’ve always been deeply involved in the communities where we work and live.</p>
+                    <span class="btn btn--cta">	<span class="btn__text text-light"><b>MORE ></b></span>	<span class="hondaIcon-right"></span></span>
+                </div>
+            </div>
+            <div class="col-6 p-0 p2_video">
+                <img src="./img/homepage-p2-pillar-safety-desktop.jpg" alt="" class="w-100">
+                <video class="p-0 m-0 " loop  muted autoplay src="https://www.honda.com/-/media/Honda-Homepage/Videos/Homepage/MP4/Safety.mp4"></video>
+                <div class="p2_content">
+                    <h3>SAFETY</h3>
+                    <p>Honda envisions a future where collisions are a thing of the past. See how we’ll get there starting with our model year 2040 vehicles.</p>
+                    <span class="btn btn--cta">	<span class="btn__text text-light"><b>MORE ></b></span>	<span class="hondaIcon-right"></span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="position: absolute; top: 3100px; width:100%;">
+        <div style="position: relative;">
+            <img src="./img/homepage-p1-philosophy-desktop.jpg" alt="" class='w-100'>     
+
+            <div class="p1__body text-center" style="position:absolute; top: 65px;left: 32%;">
+                <h2 class="p1__header">The Power of Dreams</h2>
+                <p class="p1__text">See what makes a Honda, who makes a Honda, how we got here, and where <br> we're headed.</p>
+                <span class="btn btn--cta">	<span class="btn__text"><b>MORE ></b></span>	<span class="hondaIcon-right"></span></span>   
+            </div>
+        </div>
+        <div style="padding: 0 5%" class="comp-animated">
+            <h3 class="text-center py-4">WHAT WE'RE UP TO</h3>
+            <div class="row">
+                <div class="col-4 p-0 comp-animated-card">
+                    <div class="card-img">
+                        <img src="./img/homepage-collectionhall-desktop.jpg" alt="">
+                    </div>
+                    <div class="wwut-content text-center py-5 px-2">
+                        <h3 class="wwut-title">Honda Collection Hall</h3>
+                        <p>Explore hundreds of our storied creations in this 360<span class="st">°</span> immersive experience.</p>
+                        <a class="wwut-cta" href="#">LAUNCH VIRTUAL MUSEUM </a>
+                    </div>
+                </div>
+                <div class="col-4 p-0 comp-animated-card-2">
+                    <div class="card-img">
+                        <img src="./img/Podcast-Logo_Desktop.jpg" alt="">
+                    </div>
+                    <div class="wwut-content text-center py-5 px-2">
+                        <h3 class="wwut-title">Honda Stories</h3>
+                        <p>Go behind the badge and into the world of Honda Stories. Hear an inside look at Honda from a wide variety of people including company, industry experts and championship drivers.</p>
+                        <a href="#" rel="noopener noreferrer" class="wwut-cta" target="_blank">Listen Now </a>        
+                    </div>
+                </div>
+                <div class="col-4 p-0 comp-animated-card-3">
+                    <div class="card-img">
+                        <img src="./img/Honda-Simplicity-Motif-Sketch-source-Desktop.jpg" alt="">   
+                    </div>
+                    <div class="wwut-content text-center py-5 px-2">
+                        <h3 class="wwut-title">Interior Design Philosophy</h3>
+                        <p>Honda showcases a new interior design philosophy that will shape the styling of future Honda models.</p>
+                        <a href="#" rel="noopener noreferrer" class="wwut-cta" target="_blank">Watch </a>        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-0">
+                    <div class="card-1" style="position: relative;">
+                        <img src="./img/269825798_276431314360161_5306195392054903382_n.jpg" alt="">
+                        <div style="position: absolute; top:10px; right:20px;font-size:3rem;color:white;font-weight:bold;">
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-0" style="background-color: rgb(228, 228, 228);">
+                    <div class="logo container " style="position: relative;">
+                        <div class="row">
+                            <div class="col-2 py-3">
+                                <img src="./img/i4IrP4VF_normal.png" alt="" height="50" width="50" class="rounded">
+                            </div>
+                            <div class="col-10 p-0" style="font-size:0.9rem">
+                                <p class="pt-3"><a href="#">Acura <br/> @Acura</a></p>
+                            </div>
+                        </div>
+                        <p class="wwut-twitter-copy" style="font-size:1.5rem">Drifting into the new year like #AcuraRDX 
+                            <a target="_blank" href="#">https://t.co/Z9ePETaHVL</a>
+                        </p>
+                        <span class="wwut-twitter-time" style="font-size:0.8rem"    >
+                            <a href="https://twitter.com/Acura/status/1475526950902976521" target="_blank">06:00 PM - 27 Dec 2021</a>
+                        </span>
+                        <p class="py-3" style="color: grey; font-size: 0.8rem;"><i class="fas fa-share pr-3"></i><i class="fas fa-retweet"></i>15<i class="fas fa-retweet pl-3"></i>111</p>
+                    </div>
+                    <div style="position: absolute; top:10px; right:10px;font-size:2rem;color:blue;font-weight:bold;">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="col-4 p-0">
+                    <div class="card-2" style="position: relative;">
+                        <img src="./img/269715025_286442796874460_323404473126266481_n.jpg" alt="">
+                        <div style="position: absolute; top:10px; right:20px;font-size:3rem;color:white;font-weight:bold;">
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer" style="position: absolute; top: 4900px; width:100%;background-color: rgb(228, 228, 228);">
+        <div style="padding: 5% 5%">
+            <div class="row">
+                <div class="col-4">
+                    <h5>OUR BRAND</h5>
+                    <p><a href="#">Honda Autos ></a></p>
+                    <p><a href="#">Acura Autos ></a></p>
+                    <p><a href="#">Honda Powersports ></a> <br> Motorcycles, ATVs, Scooters, SxS</p>
+                    <p><a href="#">Honda Power Equipment ></a> <br> Generators, Lawn Mowers, Pumps, Snow Blowers, Tillers, Trimmers</p>
+                    <p><a href="#">Honda Engines ></a> <br> Small Engines, Manuals, Parts & Resources</p>
+                    <p><a href="#">Honda Marine ></a> <br> Outboard Motors, Parts & Accessories</p>
+                    <p><a href="#">HondaJet ></a> <br> Honda Aircraft Company</p>
+                    <p><a href="#">ASIMO ></a> <br> The World's Most Advanced Humanoid Robot</p>  
+                </div>
+                <div class="col-4">
+                    <h5 class="">ABOUT US</h5>
+                    <p><a href="#">The Power of Dreams ></a></p>
+                    <p><a href="#">Mobility ></a></p>
+                    <p><a href="#">Environment ></a></p>
+                    <p><a href="#">Community ></a></p>
+                    <p><a href="#">Safety ></a></p>
+                    <p><a href="#">History ></a></p>
+                    <p><a href="#">Operations ></a></p>
+                    <p><a href="#">Careers ></a></p>
+
+                    <h5 class="">MORE TO EXPLORE</h5>
+                    <p><a href="#">Research & Development ></a></p>
+                    <p><a href="#">Honda in America ></a></p>
+                    <p><a href="#">Corporate Social Responsibility ></a></p>
+                    <p><a href="#">Honda Worldwide ></a></p>
+                    <p><a href="#">Investor Relations ></a></p>
+                    <p><a href="#">Media Newsroom  ></a></p>
+                </div>
+                <div class="col-4">
+                    <h5 class="">RACING</h5>
+                    <p><a href="#">Auto Racing ></a></p>
+                    <p><a href="#">Motorcycle Racing ></a></p> 
+
+                    <h5 class="">RECALLS</h5>
+                    <p><a href="#">Honda Recalls  ></a></p>
+                    <p><a href="#">Acura Recalls ></a></p>
+                    <p><a href="#">Powersports Recalls ></a></p>
+                    <p><a href="#">Power Equipment Recalls></a></p>
+                    <p><a href="#">Marine Recalls ></a></p>
+                    <p><a href="#">Engines Recalls ></a></p>
+
+                    <h5 class="">SERVICES</h5> 
+                    <p><a href="#">Honda Financial Services ></a></p>
+                    <p><a href="#">Honda Owners ></a></p>
+                    <p><a href="#">Acura Financial Services  ></a></p>
+                    <p><a href="#">Acura Owners ></a></p>
+                </div>
+            </div>
+            <div class="text-center pt-5 pb-2">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-ghost"></i>   
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+            <p class=" text-center pt-3 text-muted">© 2021 American Honda Motor Co., Inc. All information contained herein applies to U.S. products only. </p>
+            <p class="terms text-center">
+                <a target="_blank" href="#">Vehicle Data Privacy</a>&nbsp; | &nbsp;
+                <a target="_blank" href="#">SMS Terms and Conditions</a>&nbsp; | &nbsp;
+                 <a target="_blank"  href="#">Privacy Policy</a>&nbsp; | &nbsp;
+                 <a  target="_blank" href="#">Do Not Sell My Personal Information</a>&nbsp; | &nbsp;
+                <a href="#">Legal Terms and Conditions</a>&nbsp; | &nbsp;
+                <a target="_blank" href="#">Prop 65 Info</a>
+            </p>
+            <p class="terms text-center">We use cookies to improve your experience on this site and show you personalized advertising. To find out more, read our <a target="_blank" href="#"> cookie policy</a>.</p>
+            <p class="terms-1 text-center">
+                <a href="#">Site Map</a> | 
+                <a target="_blank" href="#">Honda Licensing</a> | 
+                <a target="_blank" href="#">Contact Us</a>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.menu-btn').on('click',function() {
+                $('.menu-section').removeClass(' d-none');
+            });
+
+            $('.menu-btn-cancle').on('click',function() {
+                $('.menu-section').addClass(' d-none');
+            });
+
+            $('.our-brands-btn').on('click',function() {
+                $('.menu-drop-1').toggle();
+                console.log('hádhfksadf')
+            });
+
+            $('.about-us-btn').on('click',function() {
+                $('.menu-drop-2').toggle();
+            });
+
+            $('.racing-btn').on('click',function() {
+                $('.menu-drop-3').toggle();
+            });
+
+            $('.recalls-btn').on('click',function() {
+                $('.menu-drop-4').toggle();
+            });
+
+            $('.service-btn').on('click',function() {
+                $('.menu-drop-5').toggle();
+            });
+        })
+    </script>
+
+</body>
+</html>

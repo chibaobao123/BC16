@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+     
+        <h3>Bài 1: Tính tổng các số chẵn từ 0 -> số người dùng nhập(4đ)</h3>
+        <div class="form-group">
+            <p>Nhập vào số nguyên</p>
+            <input id="txtSoNguyen" class="form-control" />
+            <button class="btn btn-success mt-2" id="btnTinhTong" onclick="xuatKqTinhTongSoChan()">Tính tổng số chẵn</button>
+        </div>
+        <div class="p-5 alert-success" id="ketQua">
+        </div>
+        <hr />
+      
+        <h3>Bài 2: Tính n! (4đ)</h3>
+        <p>Nhập số n</p>
+        <input class="form-control w-50" id="txtN" />
+        <div id="ketQuaGiaiThua" class="alert alert-success mt-2"></div>
+        <button id="btnTinhGiaiThua" class="btn btn-success" onclick="xuatKqgiaithua()">Tính giai thừa</button>
+        <hr />
+        <h3>Bài 3: Cho người dùng nhập vào 1 số in ra các thẻ div chẵn và lẻ khác màu nhau nội dung thẻ div là div + số (1 đ)</h3>
+        <p>Nhập vào số thẻ div</p>
+        <input id="soTheDiv" class="form-control w-50" />
+        <button id="btnInTheDiv" class="btn btn-success mt-2" onclick="xetChanLe()">In thẻ div</button>
+        <div id="divBT6" class="alert alert-success mb-2 mt-2">
+        </div>
+        <hr />
+        <h3>Bài 4: Kiểm tra số nguyên tố in ra các số nguyên tố từ 2 -> số nhập vào (1 đ)</h3>
+        <input id="iSo" class="form-control w-50" />
+        <button id="btnKiemTraSoNguyenTo" onclick="xuatKqSoNguyenTo()" class="mt-2 btn btn-success">Kiểm tra</button>
+        <div id="divSoNguyenTo" class="alert alert-success mt-2">
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </scrip>
+    <scrip src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </scrip>
+
+
+    <script src="./index.js"></script>
+    <script src="./method.js"></script>
+</body>
+
+</html>

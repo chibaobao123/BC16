@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h4>Bài tập 1: Cho người dùng nhập vào 3 số nguyên - in ra các số theo thứ tự tăng dần (3 điểm) </h4>
+        <!-- <p class="text text-danger"></p> -->
+        <div class="w-50">
+            <div class="form-group">
+                <p>Nhập vào số thứ 1:</p>
+                <input class="form-control" id="soThuNhat_b1" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 2:</p>
+                <input class="form-control" id="soThuHai_b1" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 3:</p>
+                <input class="form-control" id="soThuBa_b1" />
+            </div>
+            <div class="form-group">
+                <p class="alert alert-success" id="ketQuaBai1"></p>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" id="btnInKetQua1" onclick="inRaSoTangDan()">In kết quả</button>
+            </div>
+        </div>
+        <hr /> <br />
+
+        <h4>Bài tập 2: Cho người dùng nhập vào 3 số khác nhau in ra số lớn nhất (2 điểm)</h4>
+        <!-- <p class="text text-danger"></p> -->
+        <div class="w-50">
+
+            <div class="form-group">
+                <p>Nhập vào số thứ 1:</p>
+                <input class="form-control" id="soThuNhat_b2" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 2:</p>
+                <input class="form-control" id="soThuHai_b2" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 3:</p>
+                <input class="form-control" id="soThuBa_b2" />
+            </div>
+            <div class="form-group">
+                <p class="alert alert-success" id="ketQuaBai2"></p>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" id="btnInKetQua2" onclick="inRaSoLonNhat()">In kết quả</button>
+            </div>
+        </div>
+        <hr /> <br />
+        <h4>Bài tập 3: Cho người dùng nhập vào 3 số khác nhau in ra có bao nhiêu số chẵn (3 điểm)</h4>
+        <!-- <p class="text text-danger"></p> -->
+        <div class="w-50">
+
+            <div class="form-group">
+                <p>Nhập vào số thứ 1:</p>
+                <input class="form-control" id="soThuNhat_b3" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 2:</p>
+                <input class="form-control" id="soThuHai_b3" />
+            </div>
+            <div class="form-group">
+                <p>Nhập vào số thứ 3:</p>
+                <input class="form-control" id="soThuBa_b3" />
+            </div>
+            <div class="form-group">
+                <p class="alert alert-success" id="ketQuaBai3"></p>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" id="btnInKetQua3" onclick="inRaSoChan()">In kết quả</button>
+            </div>
+        </div>
+        <hr /> 
+        <h4 class="text-warning">Bài tập 4: Nhập vào ngày tháng năm -> in ra ngày tiếp theo (1 điểm)</h4>
+
+        <div class="w-50">
+            <p>Nhập ngày tháng năm</p>
+
+            <div class="row">
+                <div class="col-4">
+                    <input class="form-control" id="ngay" placeholder="Ngày" />
+                </div>
+                <div class="col-4">
+                    <input class="form-control" id="thang" placeholder="Tháng" />
+                </div>
+                <div class="col-4">
+                    <input class="form-control" id="nam" placeholder="Năm" />
+                </div>
+            </div>
+            <br />
+
+            <p>Ngày tháng năm tiếp theo</p>
+            <div class="row">
+                <div class="col-4">
+                    <input class="form-control  text-white" style="background-color: #d4edda;" id="ngayKetQua" placeholder="Ngày"  readonly />
+                </div>
+                <div class="col-4">
+                    <input class="form-control  text-white" style="background-color: #d4edda;" id="thangKetQua" placeholder="Tháng"  readonly/>
+                </div>
+                <div class="col-4">
+                    <input class="form-control  text-white" style="background-color: #d4edda;" id="namKetQua" placeholder="Năm"  readonly />
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="form-group">
+                        <button class="btn btn-success" id="btnInKetQua4" onclick="inNgayThangNamTiep()">In  kết quả</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr /> 
+        <h4 class="text-warning">Bài tập 5: Viết chức năng cho 2 nút + - để tăng giảm kích thước font chữ đoạn text bên dưới (1 điểm)</h4>
+        <p id="doanVanBan">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et suscipit perferendis voluptate porro. Quam, magnam nihil amet expedita totam reiciendis quasi aperiam vel porro id aut nulla illo nisi. Cumque!</p>
+        <button id="btnTangFont" class="btn btn-success" onclick="tangSize()">+</button>
+        <button id="btnGiamFont" class="btn btn-danger" onclick="giamSize()">-</button>
+        <div style="margin-bottom: 500px;"></div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

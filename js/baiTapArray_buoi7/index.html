@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập Mảng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Bài tập buổi 7</h1>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="inputNumber">Nhập mảng số nguyên :</label><br>
+                        <small>* nhập từng phần tử trong mảng</small><br>
+                        <small>* bấm nút để push phần tử đó vô mảng</small>
+                        <input type="number" id="inputNumber" class="form-control" placeholder="0">
+                    </div>
+                    <button type="button" class="btn btn-success" id="btnKetQua">Xuất kết qủa</button>
+                </form>
+                <form>
+                    <div class="form-group mt-5">
+                        <label for=""><b>CÂU 6: </b> Nhập số tự nhiên :</label><br>
+                        <input type="number" id="num1" class="form-control w-25 d-inline">
+                        <span><<====>></span>
+                        <input type="number" id="num2" class="form-control w-25 d-inline">
+                    </div>
+                    <button type="button" class="btn btn-success" id="btnKetQuaDoiViTri">Đổi vị trí</button>
+                </form>
+                <form>
+                    <div class="form-group  mt-5">
+                        <label for="soThuc">Nhập mảng số thực :</label><br>
+                        <small>* nhập tất cả các phần tử trong mảng </small><br>
+                        <small>* các phần tử trong mảng được cách nhau bởi dấu cách </small>
+                        <input type="text" id="soThuc" class="form-control" placeholder="1 0.2 2.3 .....">
+                    </div>
+                    <button type="button" class="btn btn-success" id="btnKetQuaSoThuc">Xuất kết qủa</button>
+                </form>
+            </div>
+            <div class="col">
+                <label>Mảng số nguyên:</label>
+                <p>[ <span id="arrayNumber"></span> ]</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Mảng thay đổi:</label>
+                <p>[ <span id="arrayNumber2"></span> ]</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label class="mt-2">Mảng số thực:</label>
+                <p>[ <span id="arraySoThuc"></span> ]</p>
+            </div>
+
+            <div class="col-12 mt-5">
+                <label>Tổng hai mãng số nguyên và số thực:</label><br>
+                <p>[ <span id="tongHaiMang"></span> ]</p>
+                <button class="btn btn-success" id="btnKqCau10">Xuất kết quả câu 10</button>
+            </div>
+        </div>
+        <hr>
+        <div class="ketqua text-center">
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 1</b>: Tổng các số dương trong mảng: </p>
+                </div>
+                <div class="col">
+                    <p id="tongSoDuong"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 2</b>: Tổng số lượng các số dương trong mảng: </p>
+                </div>
+                <div class="col">
+                    <p id="tongCacSoDuong"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 3</b>: Số nhỏ nhất là: </p>
+                </div>
+                <div class="col">
+                    <p id="min"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 4</b> :Số dương nhỏ nhất là: </p>
+                </div>
+                <div class="col">
+                    <p id="minDuong"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 5</b>: Số chẵn cuối cùng trong mảng là: </p>
+                </div>
+                <div class="col">
+                    <p id="chanCuoi"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 7</b>:  Mảng tăng dần: </p>
+                </div>
+                <div class="col">
+                    <p>[ <span id="arrTangDan"></span> ]</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 8</b>: Số nguyên tố đàu tiên trong mảng là: </p>
+                </div>
+                <div class="col">
+                    <p id="soNguyenToDauTien"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 9</b>: Số nguyên trong mảng số thực là: </p>
+                </div>
+                <div class="col">
+                    <p id="tongSoNguyenToTrongMangSoThuc"></p>
+                    <p>đó là các số :<span id="SoNguyenToTrongMangSoThuc"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><b>Câu 10</b>: So sánh số lượng số dương và số lượng số âm của mảng tổng: </p>
+                </div>
+                <div class="col">
+                    <p>số lượng số dương : <span id="soSanhDuong"></span></p>
+                    <p>số lượng số âm : <span id="soSanhAm"></span></p>
+                    <p>số âm ( <span id="spanSoSanh"></span> ) số dương</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="function.js"></script>
+    <script src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

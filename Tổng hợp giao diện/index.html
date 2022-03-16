@@ -1,0 +1,1835 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-menu w-100" id="header-menu"
+            style="position: fixed; top:0; background-color:none; z-index: 1;">
+            <nav class="py-4 ">
+                <div class="px-4 mx-4">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-2 d-flex logo-header-menu">
+                            <a class="p-2 button-menu-nav-menu" id="button-menu-nav-menu"
+                                style="cursor: pointer; font-size: 1.3rem"><i id="icon-button-menu-nav-menu"
+                                    class="fas fa-bars" style="border:none; color: white"></i></a>
+                            <a class="navbar-brand text-link" href="#" style="font-size:2rem; font-weight:bold;">
+                                <b>fiverr<span class="text-success pl-1 bg-success rounded-circle"
+                                        style="font-size:0.6rem;"><i class="fas fa-circle border-0"></i></span></b>
+                            </a>
+
+                            <div class="d-flex w-100 search-none" id="search-none">
+                                <i class="fas fa-search bg-white border border-right-0 border-dark rounded-left d-flex align-items-center px-2"
+                                    style="font-size: 1.5rem;"></i>
+                                <input name="search" type="text" placeholder='Find services' class="w-100" />
+                                <a href="#"
+                                    class="text-white border border-left-0 border-dark bg-success px-3 p-2 rounded-right"
+                                    style="font-size: 0.8rem;">Search</a>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-7 col-md-10 link-header-menu-body d-flex align-items-center justify-content-end">
+                            <div class="link-header-menu link-header-menu-business">
+                                <a class="nav-link px-3 text-link" href="#">Fiverr Business</a>
+                            </div>
+                            <div class="link-header-menu link-header-menu-explore dropdown-content-click">
+                                <a class="nav-link px-3 text-link" style="color: white" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown">Explore</a>
+                                <div class="p-4 popover-content popover-content-explore dropdown-content-570  dropdown-content dropdown-menu dropdown-menu-click-body-explore"
+                                    aria-labelledby="dropdownMenuButton">
+                                    <div class="row">
+                                        <div class="col-6"><a href="">
+                                                <div>Discover</div>
+                                                <p>Inspiring projects made on Fiverr</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Community</div>
+                                                <p>Connect with Fiverr's team and community</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Guides</div>
+                                                <p>In-depth guides covering business topics</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Podcast</div>
+                                                <p>Inside tips from top business minds</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Learn</div>
+                                                <p>Professional online courses, led by experts</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Blog</div>
+                                                <p>News, information and community stories</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Logo Maker</div>
+                                                <p>Create your logo instantly</p>
+                                            </a></div>
+                                        <div class="col-6"><a href="">
+                                                <div>Fiverr Workspace</div>
+                                                <p>One place to manage your business</p>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-header-menu link-header-menu-english dropdown-content-click">
+                                <a class="nav-link px-3 text-link" style="color: white" type="button"
+                                    id="dropdownMenuButton-English" data-toggle="dropdown"><i
+                                        class="border-0 fas fa-globe pr-2"></i>English</a>
+                                <div class="p-4 popover-content dropdown-content dropdown-menu-click-body-english dropdown-menu dropdown-menu-click-body-english"
+                                    aria-labelledby="dropdownMenuButton-English">
+                                    <div class="">
+                                        <i class="fas fa-check border-0"></i>
+                                        <div class="pl-2">English</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Deutsch</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Español</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Français</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Português</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Italiano</div>
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2 pl-4">Nederlands</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-header-menu link-header-menu-usd dropdown-content-click">
+                                <a class="nav-link px-3 text-link" style="color: white" type="button"
+                                    id="dropdownMenuButton-usd" data-toggle="dropdown">$ USD</a>
+                                <div class="py-3 pl-0 pr-3 popover-content dropdown-content dropdown-menu-click-body-usd dropdown-menu dropdown-menu-click-body-usd"
+                                    aria-labelledby="dropdownMenuButton-usd">
+                                    <div class="selection-list">
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content selected">
+                                                <span class="col-2 selected-icon" style="width:10px;height:10px"><svg
+                                                        width="16" height="16" viewBox="0 0 16 16"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.6202 2.6083L5.4001 10.8284L2.37973 7.80805C2.23329 7.66161 1.99585 7.66161 1.84939 7.80805L0.96551 8.69193C0.819073 8.83836 0.819073 9.0758 0.96551 9.22227L5.13492 13.3917C5.28135 13.5381 5.51879 13.5381 5.66526 13.3917L15.0344 4.02252C15.1809 3.87608 15.1809 3.63865 15.0344 3.49218L14.1505 2.6083C14.0041 2.46186 13.7667 2.46186 13.6202 2.6083Z">
+                                                        </path>
+                                                    </svg></span>
+                                                <p>
+                                                    <span class="currency-name">United States Dollar</span><br>
+                                                    <span class="currency-code-symbol">USD - $</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Euro</span><br>
+                                                    <span class="currency-code-symbol">EUR - €</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">British Pound</span><br>
+                                                    <span class="currency-code-symbol">GBP - £</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Australian Dollar</span><br>
+                                                    <span class="currency-code-symbol">AUD - A$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Canadian Dollar</span><br>
+                                                    <span class="currency-code-symbol">CAD - CA$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Israeli Shekel</span><br>
+                                                    <span class="currency-code-symbol">ILS - ₪</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Brazilian Real</span><br>
+                                                    <span class="currency-code-symbol">BRL - R$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Hong Kong Dollar</span><br>
+                                                    <span class="currency-code-symbol">HKD - HK$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Swedish Krona</span><br>
+                                                    <span class="currency-code-symbol">SEK - SEK</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">New Zealand Dollar</span><br>
+                                                    <span class="currency-code-symbol">NZD - NZ$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Singapore Dollar</span><br>
+                                                    <span class="currency-code-symbol">SGD - SGD</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Swiss Franc</span><br>
+                                                    <span class="currency-code-symbol">CHF - CHF</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">South African Rand</span><br>
+                                                    <span class="currency-code-symbol">ZAR - ZAR</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Chinese Renminbi Yuan</span><br>
+                                                    <span class="currency-code-symbol">CNY - CN¥</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Indian Rupee</span><br>
+                                                    <span class="currency-code-symbol">INR - ₹</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Malaysian Ringgit</span><br>
+                                                    <span class="currency-code-symbol">MYR - MYR</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Mexican Peso</span><br>
+                                                    <span class="currency-code-symbol">MXN - MX$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Pakistani Rupee</span><br>
+                                                    <span class="currency-code-symbol">PKR - PKR</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Philippine Peso</span><br>
+                                                    <span class="currency-code-symbol">PHP - ₱</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">New Taiwan Dollar</span><br>
+                                                    <span class="currency-code-symbol">TWD - NT$</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Thai Baht</span><br>
+                                                    <span class="currency-code-symbol">THB - THB</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">Turkish New Lira</span><br>
+                                                    <span class="currency-code-symbol">TRY - TRY</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                        <button class="item-row text-body-default default-currency-item">
+                                            <div class="row item-row-content">
+                                                <span class="col-2"></span>
+                                                <p>
+                                                    <span class="currency-name">United Arab Emirates Dirham</span><br>
+                                                    <span class="currency-code-symbol">AED - AED</span>
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-header-menu link-header-menu-signIn link-header-menu-seller">
+                                <a class="nav-link px-3 text-link" href="#">Become a Seller</a>
+                            </div>
+                            <div class="link-header-menu link-header-menu-signIn dropdown-content-click">
+                                <a class="nav-link px-3 text-link nav-link-sign-in" data-toggle="modal"
+                                    data-target="#signIn" style="color:white">Sign in</a>
+                            </div>
+                            <div class="link-header-menu">
+                                <a class="nav-link px-3 text-link text-link-last" data-toggle="modal"
+                                    data-target="#signIn" style="color:white">Join</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mini-nav border-top border-white" id="mini-nav" style="z-index: 1;">
+                <div class="px-4 mx-4">
+                    <div class="row">
+                        <div class="icon-prev-mini-nav" id="icon-prev-mini-nav">
+                            <i class="fas fa-chevron-left" style="font-size:0.9rem; padding: 15px 0 0 0;"></i>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="first-link-mini-nav">
+                            <a href="#" class="dropbtn">Graphics & Design</a>
+                            <div class="dropdown-content dropdown-content-1280">
+                                <div class="row px-5 text-left">
+                                    <div class="col-3">
+                                        <ul class="menu-bucket mt-3">
+                                            <li><b class="p-2">Logo & Brand Identity</b></li>
+                                            <li><a href="#">Logo Design</a></li>
+                                            <li><a href="#">Brand Style Guides</a></li>
+                                            <li><a href="#">Business Cards & Stationery</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li><b class="p-2">Gaming</b></li>
+                                            <li><a href="#">Game Art</a></li>
+                                            <li><a href="#">Graphics for Streamers</a></li>
+                                            <li><a href="#">Twitch Store</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li><b class="p-2">Logo & Brand Identity</b></li>
+                                            <li><a href="#">Logo Design</a></li>
+                                            <li><a href="#">Brand Style Guides</a></li>
+                                            <li><a href="#">Business Cards & Stationery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Web & App Design</b></li>
+                                            <li class="sub-menu-item"><a href="#">Website Design<span>new</span></a>
+                                            </li>
+                                            <li class="sub-menu-item"><a href="#">App Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">UX Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Landing Page
+                                                    Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Email Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Icon Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Web Banners</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Social Media</b></li>
+                                            <li class="sub-menu-item"><a href="#">Social Media Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">AR Filters & Lenses</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Packaging & Covers</b></li>
+                                            <li class="sub-menu-item"><a href="#">Packaging & Label
+                                                    Design<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Book Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Album Cover Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Podcast Cover Art</a></li>
+                                            <li class="sub-menu-item"><a href="#">Car Wraps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Visual Design</b></li>
+                                            <li class="sub-menu-item"><a href="#">Photoshop Editing</a></li>
+                                            <li class="sub-menu-item"><a href="#">Presentation Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Infographic Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Vector Tracing</a></li>
+                                            <li class="sub-menu-item"><a href="#">Resume Design</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2" href="#"
+                                                    style="text-decoration: underline;">Architecture & Building
+                                                    Design</b></li>
+                                            <li class="sub-menu-item"><a href="#">Architecture & Interior Design</a>
+                                            </li>
+                                            <li class="sub-menu-item"><a href="#">Landscape Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Building
+                                                    Engineering<span>new</span></a></li>
+                                            <li class="sub-menu-item"><a href="#">Building Information Modeling</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Fashion & Merchandise</b></li>
+                                            <li class="sub-menu-item"><a href="#">Fashion Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">T-Shirts & Merchandise</a></li>
+                                            <li class="sub-menu-item"><a href="#">Jewelry Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Print Design</b></li>
+                                            <li class="sub-menu-item"><a href="#">Flyer Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Brochure Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Signage Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Poster Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Catalog Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Menu Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Postcard Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Invitation Design</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Product & Characters Design</b>
+                                            </li>
+                                            <li class="sub-menu-item"><a href="#">Industrial & Product Design</a></li>
+                                            <li class="sub-menu-item"><a href="#">Character Modeling</a></li>
+                                            <li class="sub-menu-item"><a href="#">Trade Booth Design</a></li>
+                                        </ul>
+                                        <ul class="menu-bucket mt-3">
+                                            <li class="sub-menu-item"><b class="p-2">Miscellaneous</b></li>
+                                            <li class="sub-menu-item"><a href="#">Other</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-2-mini-nav">
+                            <a href="#" class="dropbtn">Degital Marketing</a>
+                            <div class="dropdown-content p-3 dropdown-content-570 text-left">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">Social Media Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Social Media Advertising</a></li>
+                                    <li class="sub-menu-item"><a href="#">Search Engine Optimization (SEO)</a></li>
+                                    <li class="sub-menu-item"><a href="#">Local SEO</a></li>
+                                    <li class="sub-menu-item"><a href="#">Marketing Strategy</a></li>
+                                    <li class="sub-menu-item"><a href="#">Public Relations</a></li>
+                                    <li class="sub-menu-item"><a href="#">Content Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Video Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Email Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Web Analytics</a></li>
+                                    <li class="sub-menu-item"><a href="#">Text Message Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Search Engine Marketing (SEM)</a></li>
+                                    <li class="sub-menu-item"><a href="#">Display Advertising </a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Influencer Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Community Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Mobile App Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Music Promotion</a></li>
+                                    <li class="sub-menu-item"><a href="#">Book & eBook Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Podcast Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Crowdfunding</a></li>
+                                    <li class="sub-menu-item"><a href="#">Affiliate Marketing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-3-mini-nav">
+                            <a href="#" class="dropbtn">Writing & Translation</a>
+                            <div class="dropdown-content p-3 dropdown-content-890 three-col text-left">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">Articles & Blog Posts</a></li>
+                                    <li class="sub-menu-item"><a href="#">Translation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Proofreading & Editing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Resume Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Cover Letters</a></li>
+                                    <li class="sub-menu-item"><a href="#">LinkedIn Profiles</a></li>
+                                    <li class="sub-menu-item"><a href="#">Ad Copy<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Sales Copy</a></li>
+                                    <li class="sub-menu-item"><a href="#">Social Media Copy</a></li>
+                                    <li class="sub-menu-item"><a href="#">Email Copy</a></li>
+                                    <li class="sub-menu-item"><a href="#">Case Studies</a></li>
+                                    <li class="sub-menu-item"><a href="#">Book & eBook Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Book Editing<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Scriptwriting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Podcast Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Beta Reading</a></li>
+                                    <li class="sub-menu-item"><a href="#">Creative Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Brand Voice & Tone</a></li>
+                                    <li class="sub-menu-item"><a href="#">UX Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Speechwriting</a></li>
+                                    <li class="sub-menu-item"><a href="#">eLearning Content
+                                            Development<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Technical Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Job Descriptions<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">White Papers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Website Content</a></li>
+                                    <li class="sub-menu-item"><a href="#">Product Descriptions</a></li>
+                                    <li class="sub-menu-item"><a href="#">Press Releases</a></li>
+                                    <li class="sub-menu-item"><a href="#">Business Names & Slogans</a></li>
+                                    <li class="sub-menu-item"><a href="#">Legal Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Grant Writing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Transcripts</a></li>
+                                    <li class="sub-menu-item"><a href="#">Research & Summaries</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2  dropdown-content-1" id="link-4-mini-nav">
+                            <a href="#">Video & Animation</a>
+                            <div class="dropdown-content p-3 dropdown-content-890 three-col text-left">
+                                <ul class="menu-panel three-columns-menu" style="left: -50.4875px;">
+                                    <li class="sub-menu-item"><a href="#">Whiteboard & Animated Explainers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Video Editing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Visual Effects</a></li>
+                                    <li class="sub-menu-item"><a href="#">Subtitles & Captions</a></li>
+                                    <li class="sub-menu-item"><a href="#">Lyric & Music Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Character Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Logo Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animation for Kids</a></li>
+                                    <li class="sub-menu-item"><a href="#">Lottie & Website Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Corporate Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Intros & Outros</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animated GIFs</a></li>
+                                    <li class="sub-menu-item"><a href="#">Short Video Ads</a></li>
+                                    <li class="sub-menu-item"><a href="#">3D Product Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Product Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Spokesperson Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Crowdfunding Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Unboxing Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">App & Website Previews</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animation for Streamers</a></li>
+                                    <li class="sub-menu-item"><a href="#">eLearning Video Production</a></li>
+                                    <li class="sub-menu-item"><a href="#">Video Templates Editing<span>new</span></a>
+                                    </li>
+                                    <li class="sub-menu-item"><a href="#">Live Action Explainers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Product Photography</a></li>
+                                    <li class="sub-menu-item"><a href="#">Local Photography<span
+                                                class="beta">beta</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Drone Videography<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Screencasting Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Meditation Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Slideshow Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Game Trailers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Book Trailers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Article to Video</a></li>
+                                    <li class="sub-menu-item"><a href="#">Real Estate Promos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-5-mini-nav">
+                            <a href="#">Music & Audio</a>
+                            <div class="dropdown-content p-3 dropdown-content-890 three-col text-left"
+                                style="left: -50px;">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">Whiteboard & Animated Explainers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Video Editing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Visual Effects</a></li>
+                                    <li class="sub-menu-item"><a href="#">Subtitles & Captions</a></li>
+                                    <li class="sub-menu-item"><a href="#">Lyric & Music Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Character Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Logo Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animation for Kids</a></li>
+                                    <li class="sub-menu-item"><a href="#">Lottie & Website Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">Corporate Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Intros & Outros</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animated GIFs</a></li>
+                                    <li class="sub-menu-item"><a href="#">Short Video Ads</a></li>
+                                    <li class="sub-menu-item"><a href="#">3D Product Animation</a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Product Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Spokesperson Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Crowdfunding Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Unboxing Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">App & Website Previews</a></li>
+                                    <li class="sub-menu-item"><a href="#">Animation for Streamers</a></li>
+                                    <li class="sub-menu-item"><a href="#">eLearning Video Production</a></li>
+                                    <li class="sub-menu-item"><a href="#">Video Templates Editing<span>new</span></a>
+                                    </li>
+                                    <li class="sub-menu-item"><a href="#">Live Action Explainers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Product Photography</a></li>
+                                    <li class="sub-menu-item"><a href="#">Local Photography<span
+                                                class="beta">beta</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Drone Videography<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Screencasting Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Meditation Videos<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Slideshow Videos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Game Trailers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Book Trailers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Article to Video</a></li>
+                                    <li class="sub-menu-item"><a href="#">Real Estate Promos</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-6-mini-nav">
+                            <a href="#">Programming & Tech</a>
+                            <div class="dropdown-content p-3 dropdown-content-570 text-left" style="left: -370px;">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">WordPress</a></li>
+                                    <li class="sub-menu-item"><a href="#">Website Builders & CMS</a></li>
+                                    <li class="sub-menu-item"><a href="#">Game Development</a></li>
+                                    <li class="sub-menu-item"><a href="#">Development for Streamers</a></li>
+                                    <li class="sub-menu-item"><a href="#">Web Programming</a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Development</a></li>
+                                    <li class="sub-menu-item"><a href="#">Mobile Apps</a></li>
+                                    <li class="sub-menu-item"><a href="#">Desktop Applications</a></li>
+                                    <li class="sub-menu-item"><a href="#">Chatbots</a></li>
+                                    <li class="sub-menu-item"><a href="#">Support & IT</a></li>
+                                    <li class="sub-menu-item"><a href="#">Online Coding Lessons</a></li>
+                                    <li class="sub-menu-item"><a href="#">Cybersecurity & Data Protection</a></li>
+                                    <li class="sub-menu-item spotlight-item"><a href="#">Get Your Website in a Few
+                                            Steps<i class="fas fa-magic px-2"></i></a></li>
+                                    <li class="sub-menu-item"><a href="#">Electronics Engineering<span>new</span></a>
+                                    </li>
+                                    <li class="sub-menu-item"><a href="#">Convert Files</a></li>
+                                    <li class="sub-menu-item"><a href="#">User Testing</a></li>
+                                    <li class="sub-menu-item"><a href="#">QA & Review</a></li>
+                                    <li class="sub-menu-item"><a href="#">Blockchain & Cryptocurrency</a></li>
+                                    <li class="sub-menu-item"><a href="#">Databases</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Processing</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Engineering<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Science<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-7-mini-nav">
+                            <a href="#">Business</a>
+                            <div class="dropdown-content p-3 dropdown-content-570 text-left" style="left: -370px;">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">Virtual Assistant</a></li>
+                                    <li class="sub-menu-item"><a href="#">Market Research<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#"><span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Customer Care<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Supply Chain Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Project Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Event Management<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Presentations</a></li>
+                                    <li class="sub-menu-item"><a href="#">Game Concept Design</a></li>
+                                    <li class="sub-menu-item"><a href="#">Flyer Distribution</a></li>
+                                    <li class="sub-menu-item"><a href="#">Business Plans</a></li>
+                                    <li class="sub-menu-item"><a href="#">Business Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Legal Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Financial Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">HR Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Career Counseling</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Entry</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Analytics</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Visualization</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1" id="link-8-mini-nav">
+                            <a href="#">Lifestyle</a>
+                            <div class="dropdown-content p-3 dropdown-content-570 text-left" style="left: -370px;">
+                                <ul class="menu-panel">
+                                    <li class="sub-menu-item"><a href="#">Virtual Assistant</a></li>
+                                    <li class="sub-menu-item"><a href="#">Market Research<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Sales<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">E-Commerce Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Customer Care<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Supply Chain Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Project Management</a></li>
+                                    <li class="sub-menu-item"><a href="#">Event Management<span>new</span></a></li>
+                                    <li class="sub-menu-item"><a href="#">Presentations</a></li>
+                                    <li class="sub-menu-item"><a href="#">Game Concept Design</a></li>
+                                    <li class="sub-menu-item"><a href="#">Flyer Distribution</a></li>
+                                    <li class="sub-menu-item"><a href="#">Business Plans</a></li>
+                                    <li class="sub-menu-item"><a href="#">Business Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Legal Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Financial Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">HR Consulting</a></li>
+                                    <li class="sub-menu-item"><a href="#">Career Counseling</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Entry</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Analytics</a></li>
+                                    <li class="sub-menu-item"><a href="#">Data Visualization</a></li>
+                                    <li class="sub-menu-item"><a href="#">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col py-2 dropdown-content-1 last-link-mini-nav" id="last-link-mini-nav">
+                            <a href="#">Trending</a>
+                            <div class="dropdown-content p-3 dropdown-content-570  text-left" style="left: -400px;">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="sub-menu-item linked-title"><a href="#"><b class="py-2">NFT
+                                                    Services</b></a></p>
+                                        <p class="sub-menu-item"><a href="#">NFT Art</a></p>
+                                        <p class="sub-menu-item"><a href="#">NFT Marketplaces</a></p>
+                                        <p class="sub-menu-item"><a href="#">NFT Animated GIFs</a></p>
+                                        <p class="sub-menu-item"><a href="#">NFT Promotion</a></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="sub-menu-item linked-title static"><b class="py-2">More Services</b>
+                                        </p>
+                                        <p class="sub-menu-item"><a href="#">Data</a></p>
+                                        <p class="sub-menu-item"><a href="#">Game Development</a></p>
+                                        <p class="sub-menu-item"><a href="#">Dropshipping</a></p>
+                                        <p class="sub-menu-item"><a href="#">Architecture & Interior Design</a></p>
+                                        <p class="sub-menu-item"><a href="#">Character Animation</a></p>
+                                        <p class="sub-menu-item"><a href="#">Holiday Season</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-next-mini-nav" id="icon-next-mini-nav">
+                            <i class="fas fa-chevron-right" style="font-size:0.9rem; padding: 15px 0 0 0;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-menu text-white" style="position: relative;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bg-hero-3-1792-x1.png" class="d-block w-100" alt="./img/bg-hero-3-1792-x1.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg-hero-1-1792-x1.jfif" class="d-block w-100"
+                            alt="./img/bg-hero-1-1792-x1.jfif">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg-hero-2-1792-x1.jfif" class="d-block w-100"
+                            alt="./img/bg-hero-2-1792-x1.jfif">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg-hero-4-1792-x1.jfif" class="d-block w-100" alt="./img/bg-hero-4-1792-x1.jfif">
+
+                </div>
+            </div>
+
+            <div class="row text-light  content-cover-body">
+                <div class="col-xl-6 col h-100 d-flex align-items-center ">
+                    <div class="container">
+                        <p class="pb-3">Find the perfet
+                            <span><i>freelance</i></span> services for your business
+                        </p>
+                        <div class="d-xl-flex pb-3 inp-search"
+                            style="font-size: 1rem;line-height: 56px;color: rgb(174, 174, 174); ">
+
+                            <i class="fas fa-search bg-white rounded-left p-3" style="font-size: 1.5rem;"></i>
+                            <input name="search" type="text" placeholder='Try "building mobile app"'
+                                class="w-100 border-0" />
+
+                            <button href="#" class="text-white btn-success px-5  rounded-right">Search</button>
+                        </div>
+                        <div class="popular" style="font-size: 0.9rem;line-height: 56px;">
+                            <span>Popular:</span>
+                            <a href="#" class="border border-light rounded-pill p-2 mx-2 text-light">Website Design</a>
+                            <a href="#" class="border border-light rounded-pill p-2 mx-2 text-light">WordPress</a>
+                            <a href="#" class="border border-light rounded-pill p-2 mx-2 text-light">Logo Design</a>
+                            <a href="#" class="border border-light rounded-pill p-2 mx-2 text-light">NFT Art</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signInForm" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center signInFormBody">
+                    <h4 class="py-3"><b>Sign In to Fiverr</b></h4>
+                    <div class="social-signing">
+                        <button class="btn-sign-in w-75 my-2 sign-in-fb">
+                            <div class="row m-2 justify-content-center align-items-center ">
+                                <span class="col-2 icon-sign-in-fb"><i class="fab fa-facebook"></i></span>
+                                <p class="col-8 m-0">Continue with Facebook</p>
+                            </div>
+                        </button>
+                        <button class="btn-sign-in w-75 my-2">
+                            <div class="row m-2 justify-content-center align-items-center">
+                                <span class="col-2 icon-sign-in-fb"><i class="fab fa-google"></i></span>
+                                <p class="col-8 m-0">Continue with Google</p>
+                            </div>
+                        </button>
+                        <button class="btn-sign-in w-75 my-2">
+                            <div class="row m-2 justify-content-center align-items-center">
+                                <span class="col-2 icon-sign-in-fb"><i class="fab fa-apple"></i></span>
+                                <p class="col-8 m-0">Continue with Apple</p>
+                            </div>
+                        </button>
+                        <div class="form-separator"><span>or</span></div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="formSignIn w-75">
+                                <input class="form-control my-2 py-4" type="text" name="taiKhoan" id="taiKhoan"
+                                    placeholder="Email / Username">
+                                <input class="form-control my-2 py-4" type="password" name="password" id="password"
+                                    placeholder="Password">
+                                <button class="btn btn-success w-100" type="button">Continue</button>
+                                <div class="d-flex justify-content-between my-4">
+                                    <span class=""><input class="checkBoxRemember" height="40" width="40"
+                                            type="checkbox" id="remember_me" checked>Remember Me</span>
+                                    <span class="">
+                                        <a type="button" class="text-success">Forgot Password?</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center border-top">
+                    <p class="pt-2">Not a member yet? <span class="text-success">Join now</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-trusted-by bg-light">
+        <div class="container py-1 d-flex justify-content-center" style="color: #b5b6ba;font-weight: 600;">
+            <span class="d-flex align-items-center">Trusted by:</span>
+            <img class="px-4" height="60" src="./img/facebook2x.2eb3efa.png" alt="">
+            <img class="px-4" height="60" src="./img/google2x.b5c24c4.png" alt="">
+            <img class="px-4" height="60" src="./img/netflix2x.887e47e.png" alt="">
+            <img class="px-4" height="60" src="./img/pandg2x.6dc32e4.png" alt="">
+            <img class="px-4" height="60" src="./img/paypal2x.22728be.png" alt="">
+        </div>
+    </div>
+
+    <div class="popular-professional-services px-4 mx-4 mt-5 pt-5" style="position: relative;">
+        <h2><b>Popular professional services</b></h2>
+        <div id="carouselExampleControls-popular" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row my-5" style="font-weight:bold;">
+                        <div class="col bgr bgr-1 mx-2">
+                            <div class="p-3">
+                                <p>Build your brand</p>
+                                <p style="font-size:1.5rem">Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="col bgr bgr-2 mx-2">
+                            <div class="p-3">
+                                <p>Customize your site</p>
+                                <p style="font-size:1.5rem">Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="col col-none bgr bgr-3 mx-2">
+                            <div class="p-3">
+                                <p>Share your message</p>
+                                <p style="font-size:1.5rem">Voice Over</p>
+                            </div>
+                        </div>
+                        <div class="col col-none col-none-915 bgr bgr-4 mx-2">
+                            <div class="p-3">
+                                <p>Engage your audience</p>
+                                <p style="font-size:1.5rem">Video Explainer</p>
+                            </div>
+
+                        </div>
+                        <div class="col col-none col-none-915 col-none-1189 bgr bgr-5 mx-2">
+                            <div class="p-3">
+                                <p>Reach more customers</p>
+                                <p style="font-size:1.5rem">Social Media</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row my-5" style="font-weight:bold;">
+                        <div class="col bgr bgr-6 mx-2">
+                            <div class="p-3">
+                                <p>Unlock growth online</p>
+                                <p style="font-size:1.5rem">SEO</p>
+                            </div>
+                        </div>
+                        <div class="col bgr bgr-7 mx-2">
+                            <div class="p-3">
+                                <p>Color your dreams</p>
+                                <p style="font-size:1.5rem">Illustration</p>
+                            </div>
+                        </div>
+                        <div class="col col-none bgr bgr-8 mx-2">
+                            <div class="p-3">
+                                <p>Go global</p>
+                                <p style="font-size:1.5rem">VTranslation</p>
+                            </div>
+                        </div>
+                        <div class="col col-none col-none-915 bgr bgr-9 mx-2">
+                            <div class="p-3">
+                                <p>Learn your business</p>
+                                <p style="font-size:1.5rem">Data Entry</p>
+                            </div>
+
+                        </div>
+                        <div class="col col-none col-none-915 col-none-1189 bgr bgr-10 mx-2">
+                            <div class="p-3">
+                                <p>Showcase your story</p>
+                                <p style="font-size:1.5rem">Book Covers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right p-4 rounded-circle bg-light" href="#carouselExampleControls-popular"
+                data-slide="next"
+                style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:45%;right:-25px;cursor: pointer;"></i>
+
+            <i class="fas fa-chevron-left p-4 rounded-circle bg-light" href="#carouselExampleControls-popular"
+                data-slide="prev"
+                style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:45%;left:-25px; cursor: pointer;"></i>
+        </div>
+    </div>
+
+    <div class="selling-proposition-wrapper" style="background-color: #f1fdf7;">
+        <div class="px-4 mx-4">
+            <div class="row">
+                <div class="col-xl-4 col-12 my-5">
+                    <h2>A whole world of freelance <br> talent at your fingertips</h2>
+                    <ul>
+                        <li>
+                            <h6><i class="far fa-check-circle"></i>The best for every budget</h6>
+                            <p class="tbody-4">Find high-quality services at every price point. No hourly rates, just
+                                project-based pricing.</p>
+                        </li>
+                        <li>
+                            <h6><i class="far fa-check-circle"></i>Quality work done quickly</h6>
+                            <p class="tbody-4">Find the right freelancer to begin working on your project within
+                                minutes.</p>
+                        </li>
+                        <li>
+                            <h6><i class="far fa-check-circle"></i>Protected payments, every time</h6>
+                            <p class="tbody-4">Always know what you'll pay upfront. Your payment isn't released until
+                                you approve the work.</p>
+                        </li>
+                        <li>
+                            <h6><i class="far fa-check-circle"></i>24/7 support</h6>
+                            <p class="tbody-4">Questions? Our round-the-clock support team is available to help anytime,
+                                anywhere.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 col-12 my-5 d-flex align-items-center justify-content-center" id="open-video-selling"
+                    style="position: relative; cursor: pointer;">
+                    <img src="./img/selling-proposition-still-1400-x1.png" alt="" class="w-100 p-5">
+                    <i class="fas fa-play border border-dark bg-dark rounded-circle p-3 text-white"
+                        style="font-size: 2rem; opacity: 0.6;position: absolute; top: 45%; left:45%"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-selling-proposition" id="video-selling-proposition" style="position: fixed;inset:0;">
+        <div class="d-flex align-items-center justify-content-center h-100 w-100" style="pointer-events: none;"
+            id="video-selling-proposition-body">
+            <video height="500" muted loop controls autoplay
+                src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"></video>
+        </div>
+    </div>
+
+    <div class="main-categories mt-5 pt-5">
+        <div class="px-4 mx-4">
+            <h2 class="pb-4">Explore the marketplace</h2>
+            <div class="categories-list">
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/graphics-design.d32a2f8.svg" alt="" />
+                        <p></p>
+                        Graphics & Design
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/online-marketing.74e221b.svg" alt="" />
+                        <p></p>
+                        Digital Marketing
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/writing-translation.32ebe2e.svg" alt="" />
+                        <p></p>
+                        Writing & Translation
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/video-animation.f0d9d71.svg" alt="" />
+                        <p></p>
+                        Video & Animation
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/music-audio.320af20.svg" alt="" />
+                        <p></p>
+                        Music & Audio
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/programming.9362366.svg" alt="" />
+                        <p></p>
+                        Programming & Tech
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/business.bbdf319.svg" alt="" />
+                        <p></p>
+                        Business
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/lifestyle.745b575.svg" alt="" />
+                        <p></p>
+                        Lifestyle
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="categories-link">
+                        <img src="./img/data.718910f.svg" alt="" />
+                        <p></p>
+                        Data
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fib-banner mt-5 pt-5 text-white" style="background-color:#0d084d">
+        <div class="px-5 mx-5">
+            <div class="row">
+                <div class="col-xl-5 col-12">
+                    <h4 class="pb-4">
+                        <span style="font-weight: 900;">fiverr</span>
+                        business.
+                        <span class="btn btn-primary rounded-pill px-2 py-0" style="font-size:0.7rem">new</span>
+                    </h4>
+                    <h2>
+                        <span style="font-weight: 700;">A business solution <br>
+                            designed for
+                        </span>
+                        <i>teams</i>
+                    </h2>
+                    <p class="my-4">Upgrade to a curated experience packed with tools and benefits, dedicated to
+                        businesses</p>
+                    <div class="d-flex">
+                        <i class=" far fa-check-circle"></i>
+                        <p> Connect to freelancers with proven business experience</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class=" far fa-check-circle"></i>
+                        <p> Get matched with the perfect talent by a customer success manager</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class=" far fa-check-circle"></i>
+                        <p> Manage teamwork and boost productivity with one powerful workspace</p>
+                    </div>
+                    <div class="btn-fib-banner py-5 ">
+                        <a class="btn btn-success px-3" href="#">
+                            Explore Fiverr Business
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-12 d-flex align-items-start justify-content-center">
+                    <div class="">
+                        <img src="./img/business-desktop-870-x1.png" alt="" class="w-100 p-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial mt-5 pt-5">
+        <div class="mx-4 px-4">
+            <div id="carouselExampleControls" class="carousel mx-4 px-4">
+                <div class="carousel-inner mx-4 px-4">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-xl-5 col-12 bg-img btn-click-video" id="open-video-testimonial-haerfest"
+                                style="background-image: url('./img/testimonial-video-still-haerfest.jpg');">
+                                <div>
+                                    <i class="fas fa-play border border-dark bg-dark rounded-circle p-3 text-white"
+                                        style="font-size: 2rem; opacity: 0.6;position: absolute; top: 45%; left:45%"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-12 d-flex align-items-center justify-content-start ">
+                                <div>
+                                    <h5>Tim and Dan Joo, Co-Founders | <img src="./img/haerfest-logo-x2.03fa5c5.png" />
+                                    </h5>
+                                    <span>"When you want to create a business bigger than yourself, you need a lot of
+                                        help. That's what Fiverr does."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-12 bg-img btn-click-video" id="open-video-testimonial-rooted"
+                                style="background-image: url('./img/testimonial-video-still-rooted.jpg');">
+                                <div>
+                                    <i class="fas fa-play border border-dark bg-dark rounded-circle p-3 text-white"
+                                        style="font-size: 2rem; opacity: 0.6;position: absolute; top: 45%; left:45%"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-12 d-flex align-items-center justify-content-start ">
+                                <div>
+                                    <h5>Kay Kim, Co-Founder | <img src="./img/rooted-logo-x2.321d79d.png" />
+                                    </h5>
+                                    <span>"It's extremely exciting that Fiverr has freelancers from all over the world —
+                                        it broadens the talent pool. One of the best things about Fiverr is that while
+                                        we're sleeping, someone's working."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-12 bg-img btn-click-video" id="open-video-testimonial-lavender"
+                                style="background-image: url('./img/testimonial-video-still-lavender.jpg');">
+                                <div>
+                                    <i class="fas fa-play border border-dark bg-dark rounded-circle p-3 text-white"
+                                        style="font-size: 2rem; opacity: 0.6;position: absolute; top: 45%; left:45%"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-12 d-flex align-items-center justify-content-start ">
+                                <div>
+                                    <h5>Brighid Gannon (DNP, PMHNP-BC), Co-Founder | <img
+                                            src="./img/lavender-logo-x2.89c5e2e.png" />
+                                    </h5>
+                                    <span>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally
+                                        everything. It was like working with a human right next to you versus being
+                                        across the world."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-12 bg-img btn-click-video" id="open-video-testimonial-naadam"
+                                style="background-image: url('./img/testimonial-video-still-naadam.jpg');">
+                                <div>
+                                    <i class="fas fa-play border border-dark bg-dark rounded-circle p-3 text-white"
+                                        style="font-size: 2rem; opacity: 0.6;position: absolute; top: 45%; left:45%"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-12 d-flex align-items-center justify-content-start ">
+                                <div>
+                                    <h5>Caitlin Tormey, Chief Commercial Officer | <img
+                                            src="./img/naadam-logo-x2.0a3b198.png" />
+                                    </h5>
+                                    <span>"We've used Fiverr for Shopify web development, graphic design, and backend
+                                        web development. Working with Fiverr makes my job a little easier every
+                                        day."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <i class="fas fa-chevron-right p-4 rounded-circle bg-light" href="#carouselExampleControls"
+                    data-slide="next"
+                    style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:45%;right:-20px;cursor: pointer;"></i>
+
+                <i class="fas fa-chevron-left p-4 rounded-circle bg-light" href="#carouselExampleControls"
+                    data-slide="prev"
+                    style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:45%;left:30px; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-maker-banner my-5">
+        <div class="m-4 p-4 bg-logo-maker-banner">
+            <div class="m-4 p-4">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                        <div class="logo-maker text-white">
+                            <h3 class="pt-4" style="letter-spacing: -2px;"><b>fiverr</b> logo maker.</h3>
+                            <h2 class="py-4" style="font-weight:bold">Make an incredible logo<br><i>in minutes</i></h2>
+                            <p>Pre-designed by top talent. Just add your touch.</p>
+                            <button class="btn btn-light px-5 text-primary mt-2" style="font-size: 1.2rem;"
+                                href="/logo-maker?source=LOHP_banner">Try Fiverr Logo Maker</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <img src="./img/bg-hero-3-1792-x12.png" alt="" class="w-100 h-100" style="object-fit: contain;object-position: 80% 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="made-on-fiverr my-5" style="background-color: #bbbbbb;">
+        <div class="mx-4 px-4 my-5 py-5">
+            <h2 class="mb-5 pl-5"><b>Get inspired with projects made by our freelancers</b></h2>
+            <div id="carouselExampleControls_made_on" class="carousel my-3">
+                <div class="carousel-inner mx-4 px-4">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/noneyn.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/0aaffa8e-01e0-4dcb-b56d-674e9b9c4bf5.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Portraits & Caricatures</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by noneyn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/bruno_malagrino.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/AF1BF970-07CA-454B-8AF1-2F3E06838C8B.jfif" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Logo Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by bruno_malagrino</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1189">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/passionshake.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/74e5ab33-a5fc-40ae-9cee-a91b23e80237.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Product Photography</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by passionshake</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1415">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/spickex.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle" src="./img/fiverr_profile.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Portraits & Caricatures</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by noneyn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/fernandobengua.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/db111eb4-c119-42b4-9a1d-9116601f3d22.jfif" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Social Media Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by fernandobengua</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/annapietrangeli.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/1d531e54-7607-4bdb-815f-088dbc0fb971.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Book Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by annapietrangeli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1189">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/skydesigner.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/2bb8af3c-4cce-42a8-a699-f11177524084.png" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Web & Mobile Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by skydesigner</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1415">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/christophbrandl.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/6b4a9867-ad06-415f-b307-11177ae30fdd.png" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Illustration</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by christophbrandl</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/mijalzagier.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Packaging Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">mijalzagier</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/eveeelin.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/f79ede47-da5f-440a-bf23-57ed9ef7d363.png" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Logo Design</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">eveeelin</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1189">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/lamonastudio-img.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/5a706f4e-9f73-4ebc-97ff-9d2ef16bf28c.png" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Animated GIFs</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by lamonastudio</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-none-1415">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/noneyn.jfif" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="rounded-circle"
+                                                        src="./img/0aaffa8e-01e0-4dcb-b56d-674e9b9c4bf5.jpg" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <b>
+                                                        <a href="#" class="text-dark">Portraits & Caricatures</a>
+                                                    </b>
+                                                    <a href="#" style="color: #95979d">by noneyn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <i class="fas fa-chevron-right p-4 rounded-circle bg-light" href="#carouselExampleControls_made_on"
+                    data-slide="next"
+                    style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:40%;right:-20px;cursor: pointer;"></i>
+
+                <i class="fas fa-chevron-left p-4 rounded-circle bg-light" href="#carouselExampleControls_made_on"
+                    data-slide="prev"
+                    style="box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);position: absolute;top:40%;left:20px; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="fiverr-guides">
+        <div class="m-4 p-4">
+            <h2 class="mb-4"><b>Fiverr guides</b></h2>
+            <div class="row">
+                
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/guide-start-online-business-552-x2.png" alt="">
+                            <div class="card-body">
+                                <b class="card-title text-dark">Start an online business and work from home</b>
+                                <p class="card-text text-dark">A complete guide to starting a small business online</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/guide-digital-marketing-552-x2.png" alt="">
+                            <div class="card-body">
+                                <b class="card-title text-dark">Digital marketing made easy</b>
+                                <p class="card-text text-dark">A practical guide to understand what is digital marketing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/guide-create-a-logo-552-x2.png" alt="">
+                            <div class="card-body">
+                                <b class="card-title text-dark">Create a logo for your business</b>
+                                <p class="card-text text-dark">A step-by-step guide to create a memorable business logo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="signup my-5">
+        <div class="bg-signup m-5 p-4">
+            <div class="p-5">
+                <h2 class="my-5"><span>Find the <i>talent</i> needed to <br> get your business <i>growing</i>.</span>
+                </h2>
+                <button class="btn btn-success my-4 px-4 ">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer my-5 " style="border-top: 1px solid rgba(128, 128, 128, 0.523)">
+        <div class="m-4 p-4">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md">
+                    <h6 class="text-black">Categories</h6>
+                    <div class="footer-collapsible-content">
+                        <ul>
+                            <li><a href="#">Graphics & Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Writing & Translation</a></li>
+                            <li><a href="#">Video & Animation</a></li>
+                            <li><a href="#">Music & Audio</a></li>
+                            <li><a href="#">Programming & Tech</a></li>
+                            <li><a href="#">Data</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md">
+                    <h6 class="text-black">About</h6>
+                    <div class="footer-collapsible-content">
+                        <ul>
+                            <div class="footer-collapsible-content">
+                                <ul>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Press & News</a></li>
+                                    <li><a href="#">Partnerships</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Intellectual Property Claims</a></li>
+                                    <li><a href="#">Investor Relations</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md">
+                    <h6 class="text-black">Categories</h6>
+                    <div class="footer-collapsible-content">
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Trust & Safety</a></li>
+                            <li><a href="#">Selling on Fiverr</a></li>
+                            <li><a href="#">Buying on Fiverr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md">
+                    <h6 class="text-black">Community</h6>
+                    <div class="footer-collapsible-content">
+                        <ul>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Community Standards</a></li>
+                            <li><a href="#">Podcast</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Invite a Friend</a></li>
+                            <li><a href="#">Become a Seller</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md">
+                    <h6 class="text-black">Community</h6>
+                    <div class="footer-collapsible-content">
+                        <ul>
+                            <li><a href="#">Fiverr Business</a></li>
+                            <li><a href="#">Fiverr Pro</a></li>
+                            <li><a href="#">Fiverr Studios</a></li>
+                            <li><a href="#">Fiverr Logo Maker</a></li>
+                            <li><a href="#">Fiverr Guides</a></li>
+                            <li><a href="#">Get Inspired</a></li>
+                            <li><a href="#">ClearVoice<p>Content Marketing</p></a></li>
+                            <li><a href="#">Fiverr Workspace<p>Invoice Software</p></a></li>
+                            <li><a href="#">Learn<p>Online Courses</p></a></li>
+                            <li><a href="#">Working Not Working</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row w-100" style="border-top: 1px solid rgba(128, 128, 128, 0.523)">
+                    <div class="d-flex col-12 col-xl-4 pt-4 w-100">
+                        <span><img src="./img/vector14.svg" /></span>
+                        <p class="ml-3 m-0"><span style="color:#b5b6ba">© Fiverr International Ltd. 2022</span></p>
+                    </div>
+                    <div class="col-12 col-xl-8 pt-1 w-100"
+                        style="color: #7a7d85; font-size: 1.3rem">
+                        <i class="p-4 fab fa-twitter"></i>
+                        <i class="p-4 fab fa-facebook"></i>
+                        <i class="p-4 fab fa-linkedin"></i>
+                        <i class="p-4 fab fa-pinterest"></i>
+                        <i class="p-4 fab fa-instagram"></i>
+                        <a class="btn btn-light rounded-pill"><i class="pr-2 fas fa-globe"></i>English</a>
+                        <a class="btn btn-light rounded-pill">$ USD</a>
+                        <i class=" fas fa-universal-access"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    let aLink = document.getElementsByClassName("text-link");
+                    // console.log(aLink.length);
+                    for (let i = 0; i < aLink.length; i++) {
+                        aLink[i].style.color = "#62646a";
+                    }
+                    document.getElementById("icon-button-menu-nav-menu").style.color = "#62646a";
+                    document.getElementById("button-menu-nav-menu").style.color = "#62646a";
+                    document.getElementsByClassName("text-link-last")[0].style.border = "2px solid green";
+                    document.getElementsByClassName("text-link-last")[0].style.color = "green";
+                    document.getElementById("header-menu").getElementsByTagName("nav")[0].style.backgroundColor = "white";
+
+                    document.getElementById("search-none").style.visibility = "visible";
+                    document.getElementById("search-none").style.opacity = "1";
+                    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+                        document.getElementById("mini-nav").style.visibility = "visible";
+                        document.getElementById("mini-nav").style.opacity = "1";
+                        document.getElementById("mini-nav").style.backgroundColor = "white";
+                    } else {
+                        document.getElementById("mini-nav").style.visibility = "hidden";
+                        document.getElementById("mini-nav").style.opacity = "0";
+                        document.getElementById("mini-nav").style.backgroundColor = "transparent";
+                    }
+                } else {
+                    let aLink = document.getElementsByClassName("text-link");
+                    // console.log(aLink.length);
+
+                    for (let i = 0; i < aLink.length; i++) {
+                        aLink[i].style.color = "white";
+                    }
+
+                    document.getElementsByClassName("text-link-last")[0].style.border = "1px solid white";
+                    document.getElementById("header-menu").getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
+                    document.getElementById("search-none").style.visibility = "hidden";
+                    document.getElementById("search-none").style.opacity = "0";
+
+                    document.getElementById("mini-nav").style.visibility = "hidden";
+                    document.getElementById("mini-nav").style.opacity = "0";
+                    document.getElementById("mini-nav").style.backgroundColor = "transparent";
+
+                    document.getElementById("button-menu-nav-menu").style.color = "white";
+                    document.getElementById("icon-button-menu-nav-menu").style.color = "white";
+                }
+            }
+
+            document.getElementById("open-video-selling").addEventListener("click", function () {
+                document.getElementById("video-selling-proposition").style.display = "block";
+                // document.getElementById("video-selling-proposition").style.position = "fixed";
+                // document.getElementById("video-selling-proposition").style.top = "15%";
+                // document.getElementById("video-selling-proposition").style.left = "20%";
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                // if any scroll is attempted,
+                // set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+            })
+
+            document.getElementById("video-selling-proposition").addEventListener("click", function () {
+                document.getElementById("video-selling-proposition").style.display = "none";
+                window.onscroll = function () { };
+            })
+
+            let cardHover = document.getElementsByClassName("categories-link")
+            // console.log(cardHover);
+            for (let i = 0; i < cardHover.length; i++) {
+                cardHover[i].addEventListener("mouseover", function (e) {
+                    cardHover[i].getElementsByTagName('p')[0].style.width = "100px";
+                    cardHover[i].getElementsByTagName('p')[0].style.borderTop = "2px solid #1dbf73";
+                })
+                cardHover[i].addEventListener("mouseout", function (e) {
+                    cardHover[i].getElementsByTagName('p')[0].style.width = "50px";
+                    cardHover[i].getElementsByTagName('p')[0].style.borderTop = "2px solid rgb(194, 194, 194)";
+                })
+                // console.log(cardHover[i].getElementsByTagName('p')[0]);
+            }
+
+            document.getElementById("icon-next-mini-nav").onclick = function () {
+                if (document.body.clientWidth > 1160) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "block";
+                    document.getElementById("last-link-mini-nav").style.display = "block";
+                    document.getElementById("icon-next-mini-nav").style.display = "none";
+                    document.getElementById("first-link-mini-nav").style.display = "none";
+                } else if (document.body.clientWidth < 1160 && document.body.clientWidth > 900) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "block";
+                    document.getElementById("last-link-mini-nav").style.display = "block";
+                    document.getElementById("link-7-mini-nav").style.display = "block";
+                    document.getElementById("link-8-mini-nav").style.display = "block";
+                    document.getElementById("link-2-mini-nav").style.display = "none";
+                    document.getElementById("link-3-mini-nav").style.display = "none";
+                    document.getElementById("icon-next-mini-nav").style.display = "none";
+                    document.getElementById("first-link-mini-nav").style.display = "none";
+                } else if (document.body.clientWidth < 915 && document.body.clientWidth > 600) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "block";
+                    document.getElementById("last-link-mini-nav").style.display = "block";
+                    document.getElementById("link-7-mini-nav").style.display = "block";
+                    document.getElementById("link-6-mini-nav").style.display = "block";
+                    document.getElementById("link-5-mini-nav").style.display = "block";
+                    document.getElementById("link-8-mini-nav").style.display = "block";
+                    document.getElementById("link-2-mini-nav").style.display = "none";
+                    document.getElementById("link-3-mini-nav").style.display = "none";
+                    document.getElementById("link-4-mini-nav").style.display = "none";
+                    document.getElementById("icon-next-mini-nav").style.display = "none";
+                    document.getElementById("first-link-mini-nav").style.display = "none";
+                }
+
+            }
+
+            document.getElementById("icon-prev-mini-nav").onclick = function () {
+                if (document.body.clientWidth > 1160) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "none";
+                    document.getElementById("last-link-mini-nav").style.display = "none";
+                    document.getElementById("icon-next-mini-nav").style.display = "block";
+                    document.getElementById("first-link-mini-nav").style.display = "block";
+                } else if (document.body.clientWidth < 1160 && document.body.clientWidth > 915) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "none";
+                    document.getElementById("last-link-mini-nav").style.display = "none";
+                    document.getElementById("link-7-mini-nav").style.display = "none";
+                    document.getElementById("link-8-mini-nav").style.display = "none";
+                    document.getElementById("link-2-mini-nav").style.display = "block";
+                    document.getElementById("link-3-mini-nav").style.display = "block";
+                    document.getElementById("icon-next-mini-nav").style.display = "block";
+                    document.getElementById("first-link-mini-nav").style.display = "block";
+                } else if (document.body.clientWidth < 915 && document.body.clientWidth > 600) {
+                    document.getElementById("icon-prev-mini-nav").style.display = "none";
+                    document.getElementById("last-link-mini-nav").style.display = "none";
+                    document.getElementById("link-7-mini-nav").style.display = "none";
+                    document.getElementById("link-6-mini-nav").style.display = "none";
+                    document.getElementById("link-5-mini-nav").style.display = "none";
+                    document.getElementById("link-8-mini-nav").style.display = "none";
+                    document.getElementById("link-2-mini-nav").style.display = "block";
+                    document.getElementById("link-3-mini-nav").style.display = "block";
+                    document.getElementById("link-4-mini-nav").style.display = "block";
+                    document.getElementById("icon-next-mini-nav").style.display = "block";
+                    document.getElementById("first-link-mini-nav").style.display = "block";
+                }
+
+            }
+
+            // if(document.body.clientWidth < 915){
+            //     $('.logo-header-menu').removeClass('col-5');
+            //     $('.logo-header-menu').addClass('col-2');
+            //     $('.link-header-menu-body').removeClass('col-7');
+            //     $('.link-header-menu-body').addClass('col-10');
+            // } else {
+            //     $('.logo-header-menu').addClass('col-5');
+            //     $('.logo-header-menu').removeClass('col-2');
+            //     $('.link-header-menu-body').addClass('col-7');
+            //     $('.link-header-menu-body').removeClass('col-10');
+            // }
+        })
+    </script>
+</body>
+
+</html>
